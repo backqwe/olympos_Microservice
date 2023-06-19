@@ -1,0 +1,5 @@
+org\olympos\api\entity\ComplexBeanTest.class
+org\olympos\api\entity\ListResp.class
+org\olympos\api\server\DubboTestService.class
+org\olympos\api\entity\DubboTest.class
+org\olympos\api\server\DubboMultiParamService.class

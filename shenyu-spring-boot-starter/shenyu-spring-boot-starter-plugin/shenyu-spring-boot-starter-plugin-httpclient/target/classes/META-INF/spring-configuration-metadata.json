@@ -1,0 +1,207 @@
+{
+  "groups": [
+    {
+      "name": "shenyu.httpclient",
+      "type": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties",
+      "sourceType": "org.apache.shenyu.springboot.starter.plugin.httpclient.HttpClientPluginConfiguration",
+      "sourceMethod": "httpClientProperties()"
+    },
+    {
+      "name": "shenyu.httpclient.pool",
+      "type": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Pool",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties",
+      "sourceMethod": "getPool()"
+    },
+    {
+      "name": "shenyu.httpclient.proxy",
+      "type": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Proxy",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties",
+      "sourceMethod": "getProxy()"
+    },
+    {
+      "name": "shenyu.httpclient.ssl",
+      "type": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties",
+      "sourceMethod": "getSsl()"
+    },
+    {
+      "name": "shenyu.httpclient.thread-pool",
+      "type": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$ThreadPool",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties",
+      "sourceMethod": "getThreadPool()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.httpclient.all-idle-time",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.connect-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.keep-alive",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.max-in-memory-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.pool.acquire-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Pool"
+    },
+    {
+      "name": "shenyu.httpclient.pool.max-connections",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Pool"
+    },
+    {
+      "name": "shenyu.httpclient.pool.name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Pool"
+    },
+    {
+      "name": "shenyu.httpclient.pool.type",
+      "type": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Pool$PoolType",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Pool"
+    },
+    {
+      "name": "shenyu.httpclient.proxy.host",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Proxy"
+    },
+    {
+      "name": "shenyu.httpclient.proxy.non-proxy-hosts-pattern",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Proxy"
+    },
+    {
+      "name": "shenyu.httpclient.proxy.password",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Proxy"
+    },
+    {
+      "name": "shenyu.httpclient.proxy.port",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Proxy"
+    },
+    {
+      "name": "shenyu.httpclient.proxy.username",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Proxy"
+    },
+    {
+      "name": "shenyu.httpclient.read-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.reader-idle-time",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.close-notify-flush-timeout",
+      "type": "java.time.Duration",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.close-notify-read-timeout",
+      "type": "java.time.Duration",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.default-configuration-type",
+      "type": "io.netty.handler.ssl.SslProvider",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.handshake-timeout",
+      "type": "java.time.Duration",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.key-password",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.key-store-password",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.key-store-path",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.key-store-provider",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.key-store-type",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.trusted-x509-certificates",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.ssl.use-insecure-trust-manager",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$Ssl"
+    },
+    {
+      "name": "shenyu.httpclient.strategy",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.thread-pool.daemon",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$ThreadPool"
+    },
+    {
+      "name": "shenyu.httpclient.thread-pool.prefix",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$ThreadPool"
+    },
+    {
+      "name": "shenyu.httpclient.thread-pool.select-count",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$ThreadPool"
+    },
+    {
+      "name": "shenyu.httpclient.thread-pool.worker-count",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties$ThreadPool"
+    },
+    {
+      "name": "shenyu.httpclient.wiretap",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.write-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    },
+    {
+      "name": "shenyu.httpclient.writer-idle-time",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.plugin.httpclient.config.HttpClientProperties"
+    }
+  ],
+  "hints": []
+}

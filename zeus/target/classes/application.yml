@@ -1,0 +1,59 @@
+server:
+  port: 9195
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: gateway-module
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: http://192.168.123.228:8848
+        refresh-enabled: true
+        import-check:
+          enabled: false
+      discovery:
+        server-addr: http://192.168.123.228:8848
+
+shenyu:
+  sync:
+    websocket:
+      urls: ws://192.168.123.226:9095/websocket
+      #urls: ws://localhost:9095/websocket
+      allowOrigin: "*"
+
+dubbo:
+  application:
+    name: zeusGateway
+    qosEnable: true
+    qosPort: 33333
+    qosAcceptForeignIp: false
+  registry:
+    address: nacos://192.168.123.228:8848
+  consumer:
+    check: false
+    timeout: 300000
+    retries: 0
+  provider:
+    timeout: 300000
+  protocols:
+    dubbo:
+      name: dubbo
+      port: 20888
+
+management:
+  health:
+    defaults:
+      enabled: false
+
+logging:
+  level:
+    root: info
+    org.springframework.boot: info
+    org.apache.shenyu.bonuspoint: info
+    org.apache.shenyu.lottery: info
+    org.apache.shenyu: info
+    org.apache.dubbo: error
+    com.alibaba.nacos: error

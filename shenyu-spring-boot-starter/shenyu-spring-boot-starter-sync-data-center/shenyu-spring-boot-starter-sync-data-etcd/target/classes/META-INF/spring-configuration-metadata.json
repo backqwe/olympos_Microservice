@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "shenyu.sync.etcd",
+      "type": "org.apache.shenyu.springboot.sync.data.etcd.EtcdConfig",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.etcd.EtcdConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.sync.etcd.connection-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.etcd.EtcdConfig"
+    },
+    {
+      "name": "shenyu.sync.etcd.serializer",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.etcd.EtcdConfig"
+    },
+    {
+      "name": "shenyu.sync.etcd.session-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.etcd.EtcdConfig"
+    },
+    {
+      "name": "shenyu.sync.etcd.url",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.etcd.EtcdConfig"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,9 @@
+api:
+  enhances:
+    findFromDB1ById: "EnhanceTest1"
+    findFromDB2ById: "EnhanceTest2"
+    findById: "EnhanceTest1"
+    findAll: "EnhanceTest2"
+    insert: "EnhanceTest1,EnhanceTest2"
+    findList: "EnhanceTest3"
+    findById2: "EnhanceTest2,EnhanceTest3"

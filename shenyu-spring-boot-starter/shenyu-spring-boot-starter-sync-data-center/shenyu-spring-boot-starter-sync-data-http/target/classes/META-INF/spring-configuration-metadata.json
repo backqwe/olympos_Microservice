@@ -1,0 +1,48 @@
+{
+  "groups": [
+    {
+      "name": "shenyu.sync.http",
+      "type": "org.apache.shenyu.sync.data.http.config.HttpConfig",
+      "sourceType": "org.apache.shenyu.springboot.starter.sync.data.http.HttpSyncDataConfiguration",
+      "sourceMethod": "httpConfig()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.sync.http.connection-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.sync.data.http.config.HttpConfig"
+    },
+    {
+      "name": "shenyu.sync.http.delay-time",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.sync.data.http.config.HttpConfig"
+    },
+    {
+      "name": "shenyu.sync.http.password",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.sync.data.http.config.HttpConfig"
+    },
+    {
+      "name": "shenyu.sync.http.read-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.sync.data.http.config.HttpConfig"
+    },
+    {
+      "name": "shenyu.sync.http.url",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.sync.data.http.config.HttpConfig"
+    },
+    {
+      "name": "shenyu.sync.http.username",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.sync.data.http.config.HttpConfig"
+    },
+    {
+      "name": "shenyu.sync.http.write-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.sync.data.http.config.HttpConfig"
+    }
+  ],
+  "hints": []
+}

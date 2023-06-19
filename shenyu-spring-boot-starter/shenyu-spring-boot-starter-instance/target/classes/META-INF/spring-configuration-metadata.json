@@ -1,0 +1,33 @@
+{
+  "groups": [
+    {
+      "name": "shenyu.register",
+      "type": "org.apache.shenyu.register.instance.api.config.RegisterConfig",
+      "sourceType": "org.apache.shenyu.springboot.starter.instance.ShenyuInstanceConfiguration",
+      "sourceMethod": "registerConfig()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.register.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.register.instance.api.config.RegisterConfig"
+    },
+    {
+      "name": "shenyu.register.props",
+      "type": "java.util.Properties",
+      "sourceType": "org.apache.shenyu.register.instance.api.config.RegisterConfig"
+    },
+    {
+      "name": "shenyu.register.register-type",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.register.instance.api.config.RegisterConfig"
+    },
+    {
+      "name": "shenyu.register.server-lists",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.register.instance.api.config.RegisterConfig"
+    }
+  ],
+  "hints": []
+}

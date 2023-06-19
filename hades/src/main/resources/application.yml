@@ -1,0 +1,95 @@
+server:
+  port: 8081
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: business-module
+  cloud:
+    nacos:
+      #username: nacos
+      #password: nacos
+      config:
+        enabled: true
+        server-addr: http://192.168.123.228:8848
+        # ${spring.cloud.nacos.discovery.server-addr}
+        refresh-enabled: true
+        import-check:
+          enabled: false
+      discovery:
+        server-addr: http://192.168.123.228:8848
+
+shenyu:
+  register:
+    registerType: http
+    serverLists: http://192.168.123.226:9095
+    #serverLists: http://localhost:9095
+    props:
+      username: admin
+      password: 123456
+  client:
+    dubbo:
+      props:
+        contextPath: /dubbo
+        appName: dubbo
+#        nacosNameSpace: ShenyuRegisterCenter
+#        port: 20888
+
+dubbo:
+  application:
+    name: hadesService
+  registry:
+    address: nacos://192.168.123.228:8848
+    #parameters:
+      #namespace: business2Module
+  consumer:
+    check: false
+    timeout: 300000
+    retries: 0
+  provider:
+    timeout: 300000
+  protocols:
+    dubbo:
+      name: dubbo
+      port: 20889
+  scan:
+    base-packages: org.olympos.service.impl
+
+datasource:
+  dblist:
+    db1:
+      name: master
+      host: 192.168.123.227
+      port: 3306
+      # 无库则需要重新建库
+      db: sungood
+      username: root
+      password: qweQWE123$%^
+      mappersPath: org.olympos.dao.mapper.db1
+      maxIdle: 10
+      minIdle: 5
+      maxActive: 20
+    db2:
+      name: slave
+      host: 192.168.123.227
+      port: 3306
+      # 无库则需要重新建库
+      db: sungood
+      username: root
+      password: qweQWE123$%^
+      mappersPath: org.olympos.dao.mapper.db2
+      maxIdle: 8
+      minIdle: 6
+      maxActive: 18
+
+logging:
+  level:
+    root: info
+    org.springframework.boot: info
+    org.apache.shenyu.bonuspoint: info
+    org.apache.shenyu.lottery: info
+    org.apache.shenyu: info
+    org.apache.dubbo: error
+    com.alibaba.nacos: error
+    org.apache.ibatis: info

@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "shenyu.sync.websocket",
+      "type": "org.apache.shenyu.plugin.sync.data.websocket.config.WebsocketConfig",
+      "sourceType": "org.apache.shenyu.springboot.starter.sync.data.websocket.WebsocketSyncDataConfiguration",
+      "sourceMethod": "websocketConfig()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.sync.websocket.allow-origin",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.sync.data.websocket.config.WebsocketConfig"
+    },
+    {
+      "name": "shenyu.sync.websocket.urls",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.plugin.sync.data.websocket.config.WebsocketConfig"
+    }
+  ],
+  "hints": []
+}

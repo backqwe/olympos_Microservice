@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.olympos.athena.datasource.ConfigRegistrarStarter,\
+org.olympos.athena.datasource.registrar.sqlSession.DBBaseConfig

@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name": "shenyu",
+      "type": "org.apache.shenyu.register.common.config.ShenyuClientConfig",
+      "sourceType": "org.apache.shenyu.springboot.starter.client.common.config.ShenyuClientCommonBeanConfiguration",
+      "sourceMethod": "shenyuClientConfig()"
+    },
+    {
+      "name": "shenyu.register",
+      "type": "org.apache.shenyu.register.common.config.ShenyuRegisterCenterConfig",
+      "sourceType": "org.apache.shenyu.springboot.starter.client.common.config.ShenyuClientCommonBeanConfiguration",
+      "sourceMethod": "shenyuRegisterCenterConfig()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.client",
+      "type": "java.util.Map<java.lang.String,org.apache.shenyu.register.common.config.ShenyuClientConfig$ClientPropertiesConfig>",
+      "sourceType": "org.apache.shenyu.register.common.config.ShenyuClientConfig"
+    },
+    {
+      "name": "shenyu.register.props",
+      "type": "java.util.Properties",
+      "sourceType": "org.apache.shenyu.register.common.config.ShenyuRegisterCenterConfig"
+    },
+    {
+      "name": "shenyu.register.register-type",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.register.common.config.ShenyuRegisterCenterConfig"
+    },
+    {
+      "name": "shenyu.register.server-lists",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.register.common.config.ShenyuRegisterCenterConfig"
+    }
+  ],
+  "hints": []
+}

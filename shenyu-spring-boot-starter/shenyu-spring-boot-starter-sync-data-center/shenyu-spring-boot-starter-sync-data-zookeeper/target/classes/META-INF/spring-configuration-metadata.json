@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "shenyu.sync.zookeeper",
+      "type": "org.apache.shenyu.springboot.sync.data.zookeeper.ZookeeperProperties",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.zookeeper.ZookeeperProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.sync.zookeeper.connection-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.zookeeper.ZookeeperProperties"
+    },
+    {
+      "name": "shenyu.sync.zookeeper.serializer",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.zookeeper.ZookeeperProperties"
+    },
+    {
+      "name": "shenyu.sync.zookeeper.session-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.zookeeper.ZookeeperProperties"
+    },
+    {
+      "name": "shenyu.sync.zookeeper.url",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.zookeeper.ZookeeperProperties"
+    }
+  ],
+  "hints": []
+}

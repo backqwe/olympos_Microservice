@@ -1,0 +1,16 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.olympos.cloud.common.configuration.BaseConfig,\
+org.olympos.cloud.common.content.ContentUtils,\
+org.olympos.cloud.server.ApiFaceEnhanceInit,\
+org.olympos.cloud.server.configuration.ApiConfig,\
+org.olympos.cloud.server.configuration.ApiConfHandle,\
+org.olympos.cloud.server.configuration.listener.ApiConfListener,\
+org.olympos.cloud.server.configuration.listener.ApiConfigListenListListener,\
+org.olympos.cloud.server.configuration.listener.ApiConfListenerHandle,\
+org.olympos.cloud.server.configuration.listener.ApiConfListenList,\
+org.olympos.cloud.server.handler.ProcessorChainHandler,\
+org.olympos.cloud.server.pluginConfigHandler.AfterPluginHandler,\
+org.olympos.cloud.server.pluginConfigHandler.BeforePluginHandler,\
+org.olympos.cloud.server.handler.ApiFacePostprocessor,\
+org.olympos.cloud.server.handler.ApiFacePreprocessor

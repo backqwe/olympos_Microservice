@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "shenyu.sync.consul",
+      "type": "org.apache.shenyu.sync.data.consul.config.ConsulConfig",
+      "sourceType": "org.apache.shenyu.springboot.sync.data.consul.ConsulSyncDataConfiguration",
+      "sourceMethod": "consulConfig()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.sync.consul.url",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.sync.data.consul.config.ConsulConfig"
+    },
+    {
+      "name": "shenyu.sync.consul.wait-time",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.sync.data.consul.config.ConsulConfig"
+    },
+    {
+      "name": "shenyu.sync.consul.watch-delay",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.sync.data.consul.config.ConsulConfig"
+    }
+  ],
+  "hints": []
+}

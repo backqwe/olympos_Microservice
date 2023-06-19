@@ -1,0 +1,589 @@
+{
+  "groups": [
+    {
+      "name": "shenyu",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceType": "org.apache.shenyu.springboot.starter.gateway.ShenyuConfiguration",
+      "sourceMethod": "shenyuConfig()"
+    },
+    {
+      "name": "shenyu.cross",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getCross()"
+    },
+    {
+      "name": "shenyu.cross.allowed-origin",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig$AllowedOriginConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig",
+      "sourceMethod": "getAllowedOrigin()"
+    },
+    {
+      "name": "shenyu.exclude",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$ExcludePath",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getExclude()"
+    },
+    {
+      "name": "shenyu.ext-plugin",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$ExtPlugin",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getExtPlugin()"
+    },
+    {
+      "name": "shenyu.fallback",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$FallbackPath",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getFallback()"
+    },
+    {
+      "name": "shenyu.file",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$FileConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getFile()"
+    },
+    {
+      "name": "shenyu.health",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$Health",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getHealth()"
+    },
+    {
+      "name": "shenyu.local",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$Local",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getLocal()"
+    },
+    {
+      "name": "shenyu.match-cache",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$MatchCache",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getMatchCache()"
+    },
+    {
+      "name": "shenyu.metrics",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$MetricsConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getMetrics()"
+    },
+    {
+      "name": "shenyu.netty.http",
+      "type": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.ShenyuNettyWebServerConfiguration",
+      "sourceMethod": "nettyTcpProperties()"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel",
+      "type": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties",
+      "sourceMethod": "getServerSocketChannel()"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel",
+      "type": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties",
+      "sourceMethod": "getSocketChannel()"
+    },
+    {
+      "name": "shenyu.ribbon",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$RibbonConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getRibbon()"
+    },
+    {
+      "name": "shenyu.scheduler",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$Scheduler",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getScheduler()"
+    },
+    {
+      "name": "shenyu.shared-pool",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getSharedPool()"
+    },
+    {
+      "name": "shenyu.switch-config",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$SwitchConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getSwitchConfig()"
+    },
+    {
+      "name": "shenyu.trie",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$ShenyuTrieConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getTrie()"
+    },
+    {
+      "name": "shenyu.upstream-check",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getUpstreamCheck()"
+    },
+    {
+      "name": "shenyu.websocket",
+      "type": "org.apache.shenyu.common.config.ShenyuConfig$WebsocketConfig",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig",
+      "sourceMethod": "getWebsocket()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shenyu.cross.allow-credentials",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-any-origin",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-expose",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-headers",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-methods",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-origin.domain",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig$AllowedOriginConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-origin.origin-regex",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig$AllowedOriginConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-origin.origins",
+      "type": "java.util.Set<java.lang.String>",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig$AllowedOriginConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-origin.prefixes",
+      "type": "java.util.Set<java.lang.String>",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig$AllowedOriginConfig"
+    },
+    {
+      "name": "shenyu.cross.allowed-origin.spacer",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig$AllowedOriginConfig"
+    },
+    {
+      "name": "shenyu.cross.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig"
+    },
+    {
+      "name": "shenyu.cross.max-age",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$CrossFilterConfig"
+    },
+    {
+      "name": "shenyu.exclude.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ExcludePath"
+    },
+    {
+      "name": "shenyu.exclude.paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ExcludePath"
+    },
+    {
+      "name": "shenyu.ext-plugin.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ExtPlugin"
+    },
+    {
+      "name": "shenyu.ext-plugin.path",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ExtPlugin"
+    },
+    {
+      "name": "shenyu.ext-plugin.schedule-delay",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ExtPlugin"
+    },
+    {
+      "name": "shenyu.ext-plugin.schedule-time",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ExtPlugin"
+    },
+    {
+      "name": "shenyu.ext-plugin.threads",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ExtPlugin"
+    },
+    {
+      "name": "shenyu.fallback.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$FallbackPath"
+    },
+    {
+      "name": "shenyu.fallback.paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$FallbackPath"
+    },
+    {
+      "name": "shenyu.file.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$FileConfig"
+    },
+    {
+      "name": "shenyu.file.max-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$FileConfig"
+    },
+    {
+      "name": "shenyu.health.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$Health"
+    },
+    {
+      "name": "shenyu.health.paths",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$Health"
+    },
+    {
+      "name": "shenyu.local.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$Local"
+    },
+    {
+      "name": "shenyu.local.sha512-key",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$Local"
+    },
+    {
+      "name": "shenyu.match-cache.max-selector-free-memory",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MatchCache"
+    },
+    {
+      "name": "shenyu.match-cache.selector-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MatchCache"
+    },
+    {
+      "name": "shenyu.metrics.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MetricsConfig"
+    },
+    {
+      "name": "shenyu.metrics.host",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MetricsConfig"
+    },
+    {
+      "name": "shenyu.metrics.jmx-config",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MetricsConfig"
+    },
+    {
+      "name": "shenyu.metrics.name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MetricsConfig"
+    },
+    {
+      "name": "shenyu.metrics.port",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MetricsConfig"
+    },
+    {
+      "name": "shenyu.metrics.props",
+      "type": "java.util.Properties",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$MetricsConfig"
+    },
+    {
+      "name": "shenyu.netty.http.access-log",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties"
+    },
+    {
+      "name": "shenyu.netty.http.select-count",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.alloc-type",
+      "type": "java.lang.String",
+      "description": "options: unpooled or pooled.",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.auto-read",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.connect-timeout-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.message-size-estimator",
+      "type": "java.lang.Integer",
+      "description": "message estimator.",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.single-event-executor-per-group",
+      "type": "java.lang.Boolean",
+      "description": "single event executor.",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.so-backlog",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.so-rcv-buf",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.so-reuse-addr",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.write-buffer-high-water-mark",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.write-buffer-low-water-mark",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.server-socket-channel.write-spin-count",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$ServerSocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.alloc-type",
+      "type": "java.lang.String",
+      "description": "options: unpooled or pooled.",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.allow-half-closure",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.auto-read",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.connect-timeout-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.ip-tos",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.message-size-estimator",
+      "type": "java.lang.Integer",
+      "description": "message estimator.",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.single-event-executor-per-group",
+      "type": "java.lang.Boolean",
+      "description": "single event executor.",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.so-keep-alive",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.so-linger",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.so-rcv-buf",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.so-reuse-addr",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.so-snd-buf",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.tcp-no-delay",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.write-buffer-high-water-mark",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.write-buffer-low-water-mark",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.socket-channel.write-spin-count",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties$SocketChannelProperties"
+    },
+    {
+      "name": "shenyu.netty.http.web-server-factory-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties"
+    },
+    {
+      "name": "shenyu.netty.http.worker-count",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.springboot.starter.netty.NettyHttpProperties"
+    },
+    {
+      "name": "shenyu.ribbon.server-list-refresh-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$RibbonConfig"
+    },
+    {
+      "name": "shenyu.scheduler.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$Scheduler"
+    },
+    {
+      "name": "shenyu.scheduler.threads",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$Scheduler"
+    },
+    {
+      "name": "shenyu.scheduler.type",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$Scheduler"
+    },
+    {
+      "name": "shenyu.shared-pool.core-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool"
+    },
+    {
+      "name": "shenyu.shared-pool.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool"
+    },
+    {
+      "name": "shenyu.shared-pool.keep-alive-time",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool"
+    },
+    {
+      "name": "shenyu.shared-pool.max-free-memory",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool"
+    },
+    {
+      "name": "shenyu.shared-pool.max-work-queue-memory",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool"
+    },
+    {
+      "name": "shenyu.shared-pool.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool"
+    },
+    {
+      "name": "shenyu.shared-pool.prefix",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SharedPool"
+    },
+    {
+      "name": "shenyu.switch-config.local",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$SwitchConfig"
+    },
+    {
+      "name": "shenyu.trie.children-size",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ShenyuTrieConfig"
+    },
+    {
+      "name": "shenyu.trie.match-mode",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ShenyuTrieConfig"
+    },
+    {
+      "name": "shenyu.trie.path-rule-cache-size",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ShenyuTrieConfig"
+    },
+    {
+      "name": "shenyu.trie.path-variable-size",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$ShenyuTrieConfig"
+    },
+    {
+      "name": "shenyu.upstream-check.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck"
+    },
+    {
+      "name": "shenyu.upstream-check.healthy-threshold",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck"
+    },
+    {
+      "name": "shenyu.upstream-check.interval",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck"
+    },
+    {
+      "name": "shenyu.upstream-check.print-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck"
+    },
+    {
+      "name": "shenyu.upstream-check.print-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck"
+    },
+    {
+      "name": "shenyu.upstream-check.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck"
+    },
+    {
+      "name": "shenyu.upstream-check.unhealthy-threshold",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$UpstreamCheck"
+    },
+    {
+      "name": "shenyu.websocket.max-frame-payload-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.shenyu.common.config.ShenyuConfig$WebsocketConfig"
+    }
+  ],
+  "hints": []
+}
