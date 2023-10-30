@@ -3,19 +3,17 @@ package org.olympos.athena.cache.config;
 import io.lettuce.core.ReadFrom;
 import io.lettuce.core.cluster.ClusterClientOptions;
 import io.lettuce.core.cluster.ClusterTopologyRefreshOptions;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisClusterConfiguration;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.RedisSentinelConfiguration;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.lettuce.LettuceClientConfiguration;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettucePoolingClientConfiguration;
-import org.apache.commons.lang3.StringUtils;
 
 import java.time.Duration;
 import java.util.List;
@@ -24,12 +22,7 @@ import java.util.stream.Collectors;
 
 @Configuration
 @EnableConfigurationProperties({ RedisBaseProperties.class, RedisServerProperties.class})
-public class BaseRedisConfig {
-
-	// 哨兵模式
-	private final static String SENTINEL_MODEL = "1";
-	// 集群模式
-	private final static String CLUSTER_MODEL = "2";
+public class RedisConfig {
 
 	// 基础配置
 	@Autowired
@@ -39,37 +32,10 @@ public class BaseRedisConfig {
 	private List<RedisServerProperties> redisServerPropertiesList;
 
 	/**
-	 * redis连接类工厂方法
-	 *
-	 * Standalone,Sentinel,RedisCluster 三个环境配置其中之一(对应 独立redis，哨兵，集群 三个模式) + JedisClient 客户端配置(连接池相关)
-	 *
-	 * @return RedisConnectionFactory Redis连接工厂类
-	 */
-	@Bean("redisConnectionFactory")
-	public RedisConnectionFactory redisConnectionFactory() {
-
-		LettuceConnectionFactory lettuce;
-
-		// Redis哨兵环境
-		if ( SENTINEL_MODEL.equals( redisBaseProperties.getClusterMode()))
-			lettuce = this.sentinelConnectionFactory();
-
-		// Redis集群环境
-		else if ( CLUSTER_MODEL.equals( redisBaseProperties.getClusterMode()))
-			lettuce = this.clusterConnectionFactory();
-
-		// Redis单服务环境
-		else
-			lettuce = this.standaloneConnectionFactory();
-
-		return lettuce;
-	}
-
-	/**
 	 * 哨兵模式连接工厂
 	 * @return LettuceConnectionFactory
 	 */
-	private LettuceConnectionFactory sentinelConnectionFactory() {
+	public LettuceConnectionFactory sentinelConnectionFactory() {
 
 		// master服务器配置(地址 + 端口)
 		String myMaster = redisBaseProperties.getMasterHost() + ":" + redisBaseProperties.getMasterPort();
@@ -117,7 +83,7 @@ public class BaseRedisConfig {
 	 * 集群模式连接工厂
 	 * @return LettuceConnectionFactory
 	 */
-	private LettuceConnectionFactory clusterConnectionFactory() {
+	public LettuceConnectionFactory clusterConnectionFactory() {
 
 		RedisClusterConfiguration clusterConfiguration = new RedisClusterConfiguration();
 		// 密码
@@ -155,7 +121,7 @@ public class BaseRedisConfig {
 	 * 单服务器连接工厂
 	 * @return LettuceConnectionFactory
 	 */
-	private LettuceConnectionFactory standaloneConnectionFactory() {
+	public LettuceConnectionFactory standaloneConnectionFactory() {
 
 		// 服务器配置(地址 + 端口)
 		RedisStandaloneConfiguration standaloneConfiguration = new RedisStandaloneConfiguration(

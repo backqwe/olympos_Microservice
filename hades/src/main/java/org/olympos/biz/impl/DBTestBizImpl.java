@@ -1,5 +1,9 @@
 package org.olympos.biz.impl;
 
+import org.olympos.athena.cache.RedisHashCache;
+import org.olympos.athena.cache.RedisPageSetCache;
+import org.olympos.athena.cache.RedisSetCache;
+import org.olympos.athena.cache.RedisValueCache;
 import org.olympos.biz.DBTestBiz;
 import org.olympos.dao.TestDAO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +22,15 @@ public class DBTestBizImpl implements DBTestBiz {
 
     @Autowired
     private TestDAO testDAO;
+
+    @Autowired
+    private RedisHashCache redisHashCache;
+    @Autowired
+    private RedisPageSetCache redisPageSetCache;
+    @Autowired
+    private RedisSetCache redisSetCache;
+    @Autowired
+    private RedisValueCache redisValueCache;
 
     public String select(@RequestParam Long id) {
         return testDAO.selectTest( id);

@@ -83,6 +83,33 @@ datasource:
       minIdle: 6
       maxActive: 18
 
+redis:
+  base:
+    # master
+    masterHost: 192.168.123.216
+    masterPort: 6379
+    password: qweQWE123$%^
+
+    # base
+    clusterMode: 0
+    sentinelPassword:
+    timeout: 300
+    refreshPeriod: 6
+
+    # connectionPool
+    poolMaxTotal: 500
+    poolMaxWait: -1
+    poolMaxIdle: 150
+    poolMinIdle: 100
+    poolTestOnBorrow: true
+
+  slave-servers:
+    - host: 192.168.123.216
+      port: 6379
+
+    - host: 192.168.123.216
+      port: 6379
+
 logging:
   level:
     root: info

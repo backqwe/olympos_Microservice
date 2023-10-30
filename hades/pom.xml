@@ -74,6 +74,12 @@
             <artifactId>athena-datasource</artifactId>
             <version>1.0.1</version>
         </dependency>
+        <!-- cache -->
+        <dependency>
+            <groupId>org.olympos</groupId>
+            <artifactId>athena-cache</artifactId>
+            <version>1.0.1</version>
+        </dependency>
 
         <!-- base -->
         <dependency>

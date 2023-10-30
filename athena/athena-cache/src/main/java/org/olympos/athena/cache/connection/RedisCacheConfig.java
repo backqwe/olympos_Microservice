@@ -1,10 +1,11 @@
-package org.olympos.athena.cache.config;
+package org.olympos.athena.cache.connection;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.jsontype.BasicPolymorphicTypeValidator;
+import org.olympos.athena.cache.config.RedisConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +24,7 @@ import java.io.Serializable;
  * @Description
  */
 @Configuration
-public class RedisCacheConfig extends BaseRedisConfig {
+public class RedisCacheConfig extends RedisConfig {
 
     @Autowired
     private RedisConnectionFactory redisConnectionFactory;
